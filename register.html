@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <link rel = "stylesheet" href = "style.css">
+  </head>
+  <body>
+    <script src="register.js"></script>
+
+    <form action = "/register" method = "post">
+        {% csrf_token %}
+
+    <input type="text" name = "username" placeholder="username" width=200px> <br>
+    <input type="password" name = "password" placeholder="password"> <br>
+    <input type="password" name = "password2" placeholder="password again"> <br>
+    <input type="email" name="email" placeholder="email"><br>
+    <input type="text" name="first_name" placeholder="first name"><br>
+    <input type="text" name="last_name" placeholder="last name"><br>
+    <input id="cookieBtn" type="submit" value="register"> <br>
+
+
+    <input type="reset" value="reset">
+    <a href="/popup.html">back</a>
+
+    </form>
+  </body>
+</html>
